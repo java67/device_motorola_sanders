@@ -6,6 +6,9 @@ type diag_prop, property_type;
 type thermal_prop, property_type;
 type qti_telephony_prop, property_type;
 type dirac_prop, property_type;
+<<<<<<< HEAD
 # Spectrum
 #type spectrum_prop, property_type;
+=======
+>>>>>>> e377680... Sanders: spectrum: remove spectrum support
 
