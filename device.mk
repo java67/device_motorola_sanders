@@ -363,7 +363,8 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors.sh \
     init.sanders.rc \
     init.dtv.rc \
-    init.dtv.sh
+    init.dtv.sh \
+    init.safailnet.rc
 
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/rootdir/etc/ueventd.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
