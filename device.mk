@@ -180,6 +180,10 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
+# Pocket Mode
+PRODUCT_PACKAGES += \
+    MotoPocketMode
+
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \

@@ -55,6 +55,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
 # DerpFest Customs
-AOSIP_BUILDTYPE := CI
+AOSIP_BUILDTYPE := Official
 BUILD_DATE := $(shell date +"%Y%m%d-%H%M%S")
 >>>>>>> 1250fc2... Sanders: Add toggle for MotoPocketMode:aosip_sanders.mk
