@@ -467,11 +467,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CarrierConfig
 
-# Prebuilt Packages
-PRODUCT_PACKAGES += \
-    Via \
-    Wallpapers
-
 # Dialer Framework
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/Dialer/com.google.android.dialer.support.jar:system/framework/com.google.android.dialer.support.jar \
