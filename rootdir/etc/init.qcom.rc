@@ -1098,3 +1098,6 @@ on property:sys.boot_completed=1
 
    # Remove settings cache, avoids derps after dirty flash
    # rm -rf /data/system/package_cache
+
+on property:apexd.status=ready
+    mount none /system/etc/swcodec/ld.config.txt /apex/com.android.media.swcodec/etc/ld.config.txt bind
