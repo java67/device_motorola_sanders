@@ -330,6 +330,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
+# Permissions (Google)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/default-permissions-google.xml:system/product/etc/default-permissions/default-permissions-google.xml
+
 # Power
 PRODUCT_PACKAGES += \
      android.hardware.power@1.2-service-qti
