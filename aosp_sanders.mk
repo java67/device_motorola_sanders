@@ -30,6 +30,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 CUSTOM_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES_EVO := true
+TARGET_PIXEL_CHARGE_ANIM := true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
