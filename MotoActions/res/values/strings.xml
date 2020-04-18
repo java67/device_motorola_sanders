@@ -17,12 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Title and summary -->
-    <string name="moto_actions_title">Moto Settings</string>
-    <string name="moto_actions_summary">The settings to mod your moto</string>
+    <string name="moto_actions_title">The Moto Evolver</string>
+    <string name="moto_actions_summary">Start evolving your Moto...</string>
 
     <!-- Device gestures -->
     <string name="device_gestures_title">Device gestures</string>
-    <string name="device_gestures_summary">Manage device gestures</string>
+    <string name="device_gesturess_summary">Manage device gestures</string>
 
     <!-- Ambient display gestures -->
     <string name="ambient_display_manage_summary">Manage ambient display gestures</string>
