@@ -32,6 +32,11 @@ CUSTOM_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES_EVO := true
 TARGET_PIXEL_CHARGE_ANIM := true
 
+# Memetainer stuff
+EVO_DONATE_URL := https://paypal.me/marshmello61
+EVO_MAINTAINER := Mayur-Varde
+EVO_SUPPORT_URL := https://t.me/EvolutionXSanders
+
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
