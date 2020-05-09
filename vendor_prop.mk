@@ -419,6 +419,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qti.inputopts.enable=true \
     persist.vendor.qti.inputopts.movetouchslop=0.6
 
+# Higher fling velocities
+# for smoother scrolling and better responsiveness
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.min.fling_velocity=160 \
+    ro.max.fling_velocity=20000
+
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.usb.mtp=0x2e82 \
@@ -484,14 +490,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # Tweaks for battery saving
-#PRODUCT_PROPERTY_OVERRIDES += \
-#   pm.sleep_mode=1 \
+PRODUCT_PROPERTY_OVERRIDES += \
+    pm.sleep_mode=1 \
+    power.saving.mode=1 \
+    ro.ril.disable.power.collapse=0 \
+    ro.config.hw_power_saving=1 \
+    ro.config.hw_fast_dormancy=1 \
+    ro.config.hw_quickpoweron=true
 #   usb_wakeup=enable \
 #   proximity_incall=enable \
 #   power_supply.wakeup=enable \
-#   ro.config.hw_power_saving=1 \
-#   ro.config.hw_fast_dormancy=1 \
-#   ro.config.hw_quickpoweron=true \
 #   persist.sys.use_dithering=0
 
 # Boot
