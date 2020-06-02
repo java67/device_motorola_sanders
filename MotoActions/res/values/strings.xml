@@ -19,6 +19,7 @@
     <!-- Title and summary -->
     <string name="moto_actions_title">The Moto Evolver</string>
     <string name="moto_actions_summary">Start evolving your Moto...</string>
+    <string name="actions_header_title">Make your life easy with Moto Evolver</string>
 
     <!-- Device gestures -->
     <string name="device_gestures_title">Device gestures</string>
