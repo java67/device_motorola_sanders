@@ -51,7 +51,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.tunnel.encode=false \
     vendor.audio.dolby.ds2.enabled=true \
     vendor.audio.dolby.ds2.hardbypass=false \
-    ro.config.media_vol_steps=25 \
+    ro.config.media_vol_steps=30 \
     vendor.use.voice.path.for.pcm.voip=false \
     hpx_send_params=1
 
