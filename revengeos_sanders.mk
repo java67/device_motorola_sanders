@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Inherit from sanders device
 $(call inherit-product, device/motorola/sanders/device.mk)
 
-# Inherit some cmmon xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some cmmon revengeos stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -32,7 +32,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
-PRODUCT_NAME := xtended_sanders
+PRODUCT_NAME := revengeos_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
@@ -47,14 +47,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
 VENDOR_BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
 
-<<<<<<< HEAD:xtended_sanders.mk
+
 # for specific
 $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
-=======
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
-# DerpFest Customs
-AOSIP_BUILDTYPE := Official
-BUILD_DATE := $(shell date +"%Y%m%d-%H%M%S")
->>>>>>> 1250fc2... Sanders: Add toggle for MotoPocketMode:aosip_sanders.mk

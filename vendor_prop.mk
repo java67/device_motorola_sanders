@@ -368,26 +368,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Volte
 PRODUCT_PROPERTY_OVERRIDES += \
-<<<<<<< HEAD
-    persist.vendor.radio.force_on_dc=true \
-    persist.radio.custom_ecc=1 \
-    persist.radio.data_con_rprt=1 \
-    persist.vendor.radio.data_ltd_sys_ind=1 \
-    persist.radio.data_ltd_sys_ind=1 \
-    persist.vendor.radio.ignore_dom_time=10 \
-    persist.radio.ignore_dom_time=10 \
-    persist.radio.rat_on=combine \
-    persist.radio.is_wps_enabled=true \
-    persist.radio.videopause.mode=1 \
-    persist.radio.sap_silent_pin=1 \
-    persist.radio.always_send_plmn=true \
-    persist.rcs.supported=1 \
-    persist.dbg.ims_volte_enable=1 \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1 \
-    persist.radio.data_lte_sys_ind=1
-=======
 persist.vendor.radio.force_on_dc=true \
 persist.radio.custom_ecc=1 \
 persist.radio.data_con_rprt=1 \
@@ -410,7 +390,6 @@ persist.radio.data_lte_sys_ind=1
 # Create Swap disk, if below sys-prop enabled & also if device has lower (< 1 GB) RAM
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.config.swap=true
->>>>>>> e377680... Sanders: spectrum: remove spectrum support
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -436,4 +415,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xtended.maintainer=Ashwatthama
+    ro.revengeos.maintainer=VINAYOO7

@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/xtended_sanders.mk
+	$(LOCAL_DIR)/revengeos_sanders.mk
 
 COMMON_LUNCH_CHOICES := \
-	xtended_sanders-userdebug
+	revengeos_sanders-userdebug
