@@ -17,14 +17,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Title and summary -->
-<<<<<<< HEAD
-    <string name="moto_actions_title">Derped MotoQuest</string>
-    <string name="moto_actions_summary">The Quest full of Fest..</string>
+    <string name="moto_actions_title">MotoActions</string>
+    <string name="moto_actions_summary">Device specific</string>
     <string name="actions_header_title">Make your life easy with MotoActions</string>
-=======
-    <string name="moto_actions_title">Moto Settings</string>
-    <string name="moto_actions_summary">Yea we call it shit</string>
->>>>>>> parent of 1c18652... Sanders: MotoActions: Adapt it as per DerpFest API
 
     <!-- Device gestures -->
     <string name="device_gestures_title">Device gestures</string>

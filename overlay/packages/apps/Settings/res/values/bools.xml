@@ -12,10 +12,6 @@
      limitations under the License.
 -->
 <resources>
-<<<<<<< HEAD
-=======
-
->>>>>>> e377680... Sanders: spectrum: remove spectrum support
     <!-- Whether to add AGPS parameter settings -->
     <bool name="config_agps_enabled">true</bool>
 </resources>
