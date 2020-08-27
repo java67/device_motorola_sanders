@@ -23,6 +23,8 @@
     -->
     <integer name="config_fingerprintSensorLocation">1</integer>
 
+    <string name="bliss_maintainer">V1NAY007</string>
+
     <!-- Battery Health -->
     <string name="config_batDesCap">/sys/class/power_supply/bms/charge_full</string>
     <string name="config_batCurCap">/sys/class/power_supply/bms/charge_now_raw</string>
