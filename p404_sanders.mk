@@ -25,24 +25,15 @@ $(call inherit-product, device/motorola/sanders/device.mk)
 # For Specific
 $(call inherit-product, vendor/motorola/sanders/sanders-vendor.mk)
 
-# Inherit some common Evolution-X stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-TARGET_GAPPS_ARCH := arm64
-CUSTOM_BUILD_TYPE := OFFICIAL
-TARGET_BOOT_ANIMATION_RES_EVO := true
-TARGET_PIXEL_CHARGE_ANIM := true
-
-# Memetainer stuff
-EVO_DONATE_URL := https://paypal.me/marshmello61
-EVO_MAINTAINER := Mayur-Varde
-EVO_SUPPORT_URL := https://t.me/EvolutionXSanders
+# Inherit some common 404 stuff.
+$(call inherit-product, vendor/404/configs/common.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
-PRODUCT_NAME := aosp_sanders
+PRODUCT_NAME := p404_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
 
