@@ -626,13 +626,12 @@
          one bar higher than they actually are -->
     <bool name="config_inflateSignalStrength">true</bool>
 
-    <!-- SystemInfo Sys Nodes -->
-    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone3/temp</string>
-    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
-    <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
-    <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
-    <integer name="config_sysCPUTempMultiplier">10</integer>
-    <integer name="config_sysBatteryTempMultiplier">10</integer>
+    <!-- Sets the paths that are needed for SystemInfo-->
+    <string name="config_cpu_temp_path" translatable="false">/sys/class/thermal/thermal_zone0/temp</string>
+    <string name="config_battery_temp_path" translatable="false">sys/class/power_supply/battery/temp</string>
+    <string name="config_gpu_clock_path" translatable="false">/sys/kernel/gpu/gpu_clock</string>
+    <string name="config_gpu_busy_path" translatable="false">/sys/kernel/gpu/gpu_busy</string>
+    <string name="config_battery_level_path" translatable="false">/sys/class/power_supply/battery/capacity</string>
 
     <!-- The list of components which should be automatically disabled for a specific device. -->
     <string-array name="config_deviceDisabledComponents" translatable="false">
@@ -662,5 +661,9 @@
 
     <!-- Flag indicating whether we should enable the adaptive sleep.-->
     <bool name="config_adaptive_sleep_available">true</bool>
+
+    <!-- Add MotoActions To ZenHub-->
+    <string name="config_device_parts_package_name" translatable="false">com.moto.actions</string>
+    <string name="config_device_parts_package_activity" translatable="false">com.moto.actions.DeviceSettingsActivity</string>
 
 </resources>
