@@ -244,6 +244,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE := true
 
 # Wifi
+BOARD_USES_AOSP_WLAN_HAL         := true
 BOARD_HAS_QCOM_WLAN              := true
 BOARD_WLAN_DEVICE                := qcwcn
 BOARD_HOSTAPD_DRIVER             := NL80211
