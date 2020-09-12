@@ -226,8 +226,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 LZMA_RAMDISK_TARGETS := recovery
 
 # SELinux
-#include device/qcom/sepolicy-legacy-um/sepolicy.mk
-#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
