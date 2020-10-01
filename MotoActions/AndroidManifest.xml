@@ -19,7 +19,6 @@
         android:allowBackup="true"
         android:label="@string/moto_actions_title"
         android:icon="@drawable/ic_gesture"
-        android:summary="@string/moto_actions_summary"
         android:persistent="true">
 
         <provider
@@ -47,27 +46,6 @@
             </intent-filter>
         </service>
 
-	<service
-            android:name="com.moto.actions.dirac.DiracTileService"
-            android:icon="@drawable/dirac_qs_tile_icon"
-            android:label="@string/dirac_qs_tile_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
-	<service
-            android:name="com.moto.actions.LogTile"
-            android:icon="@drawable/ic_qs_log"
-            android:label="@string/quick_settings_log_tile_label"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
         <activity
             android:name=".DozeSettingsActivity"
             android:label="@string/ambient_display_title"
@@ -81,6 +59,7 @@
         <activity
             android:name=".ActionsPreferenceActivity"
             android:label="@string/moto_actions_title"
+            android:summary="@string/device_gestures_summary"
             android:theme="@style/MotoActions">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -93,51 +72,24 @@
                 android:resource="@color/homepage_moto_background" /> 
 	    <meta-data
                 android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_gestures_dashboard" />
+                android:resource="@drawable/ic_settings_gestures" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/moto_actions_summary" />
+                android:resource="@string/device_gestures_summary" />
         </activity>
 
         <activity
             android:name=".GestureSettingsActivity"
             android:label="@string/device_gestures_title"
-            android:theme="@style/MotoActions"
-            android:exported="true">
+            android:theme="@style/MotoActions">
         </activity>
 
         <activity
             android:name=".FPGestureSettingsActivity"
             android:label="@string/fingerprint_gestures_title"
-            android:theme="@style/MotoActions"
-            android:exported="true">
-        </activity>
-        <!-- Display Calibration -->
-        <activity
-            android:name="com.moto.actions.DisplayCalibration"
-            android:label="@string/kcal_title"
-	    android:theme="@style/MotoActions">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
+            android:theme="@style/MotoActions">
         </activity>
 
-	<activity
-            android:name=".ScreenOffGestureSettingsActivity"
-            android:label="@string/screen_off_gestures_title"
-            android:theme="@style/MotoActions"
-            android:exported="true">
-        </activity>
-        
-        <!-- Dirac Sounds -->
-        <activity
-            android:name="com.moto.actions.dirac.DiracActivity"
-            android:label="@string/dirac_title"
-	    android:theme="@style/MotoActions">
-            <intent-filter>
-                 <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
