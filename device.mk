@@ -441,7 +441,9 @@ PRODUCT_COPY_FILES += \
 # Shims
 PRODUCT_PACKAGES += \
     libcutils_shim \
-    libqsap_shim
+    libqsap_shim \
+    libshim_ims \
+    libshims_imsrcsd
 
 # Thermal
 PRODUCT_PACKAGES += \
