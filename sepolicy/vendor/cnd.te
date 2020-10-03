@@ -1,7 +1,7 @@
 allow cnd diag_device:chr_file { read write };
 allow cnd self:capability { chown  net_raw };
 
-allow cnd hal_cne_hwservice:hwservice_manager add;
+#allow cnd hal_cne_hwservice:hwservice_manager add;
 allow cnd sysfs:file { open read };
 allow cnd self:capability fsetid;
 allow cnd wifi_prop:file { getattr open read };

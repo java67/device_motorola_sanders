@@ -14,8 +14,6 @@ allow hal_fingerprint_fpc uhid_device:chr_file { getattr open read ioctl lock wr
 get_prop(hal_fingerprint_fpc, hwservicemanager_prop) 
 allow hal_fingerprint_fpc system_data_file:dir { add_name getattr open read remove_name write };
 allow hal_fingerprint_fpc system_data_file:file { open read };
-allow hal_fingerprint_fpc hwservicemanager:binder { call transfer };
-allow hal_fingerprint_fpc fpc_extension_service:hwservice_manager add;
 allow hal_fingerprint_fpc hidl_base_hwservice:hwservice_manager add;
 allow hal_fingerprint_fpc system_server:binder { call transfer };
 

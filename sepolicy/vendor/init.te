@@ -39,8 +39,6 @@ allow init self:netlink_route_socket { bind create getopt nlmsg_read read setopt
 allow init self:capability2 { block_suspend };
 
 #allow init default_android_hwservice:hwservice_manager add;
-allow init hidl_base_hwservice:hwservice_manager add;
-allow init fpc_extension_service:hwservice_manager add;
 
 allow init fsg_file:dir mounton;
 allow init sysfs:file setattr;
@@ -53,5 +51,5 @@ allow init fingerprintd_data_file:file { append rename };
 
 allow init vendor_data_file:file lock;
 allow init hal_audio_default:binder call;
-allow init platform_app:binder call;
-allow init mm-qcamerad:binder transfer;
+#allow init platform_app:binder call;
+#allow init mm-qcamerad:binder transfer;
