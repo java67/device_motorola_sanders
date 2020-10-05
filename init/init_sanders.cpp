@@ -35,27 +35,17 @@
 #include "vendor_init.h"
 
 using android::base::GetProperty;
-using std::string;
-
-void property_override(string prop, string value)
-{
-    auto pi = (prop_info*) __system_property_find(prop.c_str());
-
-    if (pi != nullptr)
-       __system_property_update(pi, value.c_str(), value.size());
-    else
-       __system_property_add(prop.c_str(), prop.size(), value.c_str(), value.size());
-}
+using android::init::property_set;
 
 void vendor_load_properties()
 {
     struct sysinfo sys;
     sysinfo(&sys);
     if (sys.totalram > 3072ull * 1024 * 1024) {
-        property_override("ro.boot.ram", "4GB");
+        property_set("ro.boot.ram", "4GB");
     } else if (sys.totalram > 2048ull * 1024 * 1024) {
-        property_override("ro.boot.ram", "3GB");
+        property_set("ro.boot.ram", "3GB");
     } else {
-        property_override("ro.boot.ram", "2GB");
+        property_set("ro.boot.ram", "2GB");
     }
 }
