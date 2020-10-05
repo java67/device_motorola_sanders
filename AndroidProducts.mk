@@ -17,4 +17,5 @@ PRODUCT_MAKEFILES := \
 	$(LOCAL_DIR)/cesium_sanders.mk
 
 COMMON_LUNCH_CHOICES := \
-	cesium_sanders-userdebug
+	cesium_sanders-userdebug \
+        cesium_sanders-eng
