@@ -390,3 +390,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Enable QC2 bufferqueue block-pool
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qc2.use.bqpool=1
+
+#Privaap Permissions
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.control_privapp_permissions=log
