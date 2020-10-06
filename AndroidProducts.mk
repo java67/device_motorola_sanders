@@ -14,8 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/fluid_sanders.mk
+	$(LOCAL_DIR)/bliss_sanders.mk
 
 COMMON_LUNCH_CHOICES := \
-	fluid_sanders-userdebug \
-        fluid_sanders-eng
+	bliss_sanders-userdebug
