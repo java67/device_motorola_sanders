@@ -279,3 +279,7 @@ WIFI_DRIVER_FW_PATH_STA          := "sta"
 WIFI_DRIVER_FW_PATH_P2P          := "p2p"
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
+
+# Shim
+TARGET_LD_SHIM_LIBS := \
+    /system/product/lib64/libdpmframework.so|libcutils_shim.so
