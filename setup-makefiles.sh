@@ -25,9 +25,9 @@ VENDOR=motorola
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-POTATO_ROOT="$MY_DIR"/../../..
+OCTAVI_ROOT="$MY_DIR"/../../..
 
-HELPER="$POTATO_ROOT"/vendor/potato/build/tools/extract_utils.sh
+HELPER="$OCTAVI_ROOT"/vendor/octavi/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -35,7 +35,7 @@ fi
 . "$HELPER"
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$POTATO_ROOT"
+setup_vendor "$DEVICE" "$VENDOR" "$OCTAVI_ROOT"
 
 # Copyright headers and guards
 write_headers
