@@ -444,6 +444,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf \
     libQWiFiSoftApCfg \
     tcpdump \
+    libwifi-hal-qcom \
     libwpa_client
 
 # Wifi Symlinks
