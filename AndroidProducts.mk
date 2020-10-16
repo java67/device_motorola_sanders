@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/octavi_sanders.mk
+	$(LOCAL_DIR)/statix_sanders.mk
 
 COMMON_LUNCH_CHOICES := \
-	octavi_sanders-userdebug \
-        octavi_sanders-eng
+	statix_sanders-userdebug \
+        statix_sanders-eng

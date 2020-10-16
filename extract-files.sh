@@ -24,9 +24,9 @@ VENDOR=motorola
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-OCTAVI_ROOT="$MY_DIR"/../../..
+STATIX_ROOT="$MY_DIR"/../../..
 
-HELPER="$OCTAVI_ROOT"/vendor/octavi/build/tools/extract_utils.sh
+HELPER="$STATIX_ROOT"/vendor/statix/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -50,7 +50,7 @@ else
 fi
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$OCTAVI_ROOT"
+setup_vendor "$DEVICE" "$VENDOR" "$STATIX_ROOT"
 
 extract "$MY_DIR"/proprietary-files.txt "$SRC"
 
