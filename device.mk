@@ -113,6 +113,7 @@ PRODUCT_PACKAGES += \
     libbt-vendor
 
 # Bluetooth-Octavi
+PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
     libbthost_if \
